@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id = "main">
+            <h1 id= "title">Form</h1>
+            
+            <p id ="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tenetur aliquam obcaecati laudantium quaerat nostrum, vel itaque corrupti, sunt vitae est! Et distinctio ullam autem ratione, error consequatur cumque fugiat!</p>   
+            
+            <form id = "survey-form"> 
+                
+                <div id = "inputs">
+                    <label for= "name" name="name" id="name-label" >Enter your name: </label>
+                    <input type ="text" name = "name" id = "name" placeholder="e.g John Doe" required>
+                
+                    <label for = "email" name = "email" id = "email-label" required> Enter your email: </label>
+                    <input type = "email" name = "email" id = "email" placeholder ="youremail@email.com" required>
+                
+                    <label  for ="number" name ="number" id = "number-label"> Number </label>
+                    <input type ="number" name = "number" id = "number" placeholder = "0-100" required min ="0" max = "100"> 
+                </div>
+                
+                <div id = "dropdown">
+                    <label for = "dropdown" id = "dropdown" name="dropdown"></label>  
+                    <select id = "dropdown" name = "dropdown"> 
+                        <option value ="cats">Cats</option>
+                        <option value ="dogs">Dogs</option>'
+                        <option value ="snitches">Snitches</option>         
+                    </select>
+                </div>
+                
+                <div id = "radio">          
+                    <input type="radio" id = "radio" name="radio"> 
+                    <label for ="name">Rock</label>
+
+                 
+                    <input type="radio" id = "radio" name="radio"> 
+                    <label for ="name">Paper</label>
+
+                    <input type="radio" id = "radio" name="radio"> 
+                    <label for ="name">Scissors</label>
+                </div>
+                
+                <div id ="checkbox">           
+                    <input type="checkbox" id = "checkbox" name="checkbox" value = "Red">
+                    <label for ="checkbox">Red</label>
+
+                    <input type="checkbox" id = "checkbox" name="checkbox" value="Green">
+                    <label for ="checkbox">Green</label>
+                
+                    <input type="checkbox" id = "checkbox" name="checkbox" value="Blue">
+                    <label for ="checkbox">Blue</label>
+                </div>       
+                
+                <textarea></textarea>
+
+                <input type="submit" name = "submit"id = "submit">
+            </form>    
+    </body>
+</html>   

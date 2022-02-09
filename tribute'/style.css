@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'kayak_sansregular';
+    src: url('kayak_sans_regular-webfont.woff2') format('woff2'),
+         url('kayak_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    min-height:100vh; 
+    margin: 0;
+    font-family: 'kayak_sansregular';
+    background-size: cover;
+    background-image: -moz-linear-gradient(top, #0D1644 0%, #292A41 100%, #646FA5 100%), url("https://www.clipartmax.com/png/full/166-1666751_28-collection-of-donut-drawing-png-doughnut.png") repeat scroll 50% 50%; 
+    background-image: -webkit-linear-gradient(top, #0D1644 0%, #292A41 100%, #646FA5 100%),url("https://www.clipartmax.com/png/full/166-1666751_28-collection-of-donut-drawing-png-doughnut.png") repeat scroll 50% 50%;
+    background-image: linear-gradient(to bottom, #0D1644 0%, #292A41 100%, #646FA5 100%),url("https://www.clipartmax.com/png/full/166-1666751_28-collection-of-donut-drawing-png-doughnut.png");
+}
+#title{
+    width: 100%;
+    height: auto; 
+    margin: auto 0;
+    align-content: center;
+    background: #CD5D49;
+    background: -moz-linear-gradient(top, #CD5D49 0%, #CD736E 71%, #0D1644 100%);
+    background: -webkit-linear-gradient(top, #CD5D49 0%, #CD736E 71%, #0D1644 100%);
+    background: linear-gradient(to bottom, #CD5D49 0%, #CD736E 71%, #0D1644 100%);    border-radius: 5px;
+    color: white;
+    display: flex;
+    font-size: 100px;
+}
+h1{
+    margin: 0 auto;
+    width: 75%;
+    height: 26vh;
+    justify-content: center;
+    display: flex;
+    text-shadow: 0px 0px 11px #000000;
+}
+p{
+    height:auto;
+    width:50%;
+    color: white;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    background-color:rgba(1,1,1,0.75);
+    padding: 2%; 
+}
+#img-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+    height: auto; 
+}
+img{
+    max-width: 100%;
+    -webkit-box-shadow: 0px 0px 68px 4px #0D1644; 
+    box-shadow: 0px 0px 20px 4px #0D1644;
+    display: flex;
+    height: auto; 
+}
+figcaption{
+    align-self: flex-end;
+    text-align: right;
+    display: flex;
+    color:white;
+    padding: 1vh;
+    margin: 0 auto;
+    caption-side: bottom;
+    background-color:rgba(1,1,1,0.75);
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+}
+#tribute-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh; 
+    color: white;   
+    background-color:rgba(1,1,1,0.75);
+    width: 15%;
+    height: 10%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+
+}
