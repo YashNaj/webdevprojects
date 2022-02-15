@@ -4,8 +4,6 @@ html {
   top: 0;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial;
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 body {
@@ -18,6 +16,7 @@ body {
   width: 100%;
   overflow-x: hidden !important;
   text-align: center;
+
 }
 
 section {
@@ -68,9 +67,11 @@ h1#headername {
 
 ul.nav-links {
   display: flex;
-  width: auto;
+  width: 100%;
+  margin: 0 auto;
   height: auto;
   font-weight: 900;
+  padding-left: 10px;
 }
 
 a {
@@ -82,7 +83,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: rgba(208, 0, 0, 1);
 }
 
 a:target {
@@ -102,41 +103,55 @@ a:target {
 
 .welcome-section {
   min-height: 100vh;
-  width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   background-color: transparent;
-  margin-bottom: 16vw;
 }
 .about {
-  min-height: 120vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-flow: column;
   background-color: transparent;
 }
-
-.languagedisplay {
+.learnedLang {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-flow: column wrap;
   height: auto;
-  background-color: transparent;
+}
+.languagedisplay {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  height: auto;
 }
 
 .projects {
-  min-height: 33vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-flow: column;
-  height: 33vh;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
   padding: 0;
   justify-content: space-between;
+}
+
+.contact {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  margin-top: 12vh; 
 }
 
 #namecontainer {
@@ -213,7 +228,7 @@ a:target {
 
 #language-container {
   margin: 0 auto;
-  padding: 0;
+  padding-top: 40px;
   display: flex;
   flex-flow: column;
   width: 100%;
@@ -230,6 +245,8 @@ a:target {
   height: auto;
   justify-content: center;
   background-color: transparent;
+  margin-bottom: 200px;
+  margin-top:-200px;
 }
 
 .row {
@@ -238,8 +255,6 @@ a:target {
   margin: 5px;
   width: 100%;
   justify-content: space-around;
-  margin-bottom: 200px;
-  background-color: transparent;
 }
 
 .language {
@@ -247,14 +262,15 @@ a:target {
   height: 250px;
   display: flex;
   justify-content: space-around;
-  border-radius: 3%;
+  border-radius: 20%;
   max-width: 100%;
   max-height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   -webkit-box-shadow: 1px 4px 15px 2px rgba(87, 87, 87, 0.53);
-  box-shadow: 1px 4px 15px 2px rgba(208, 0, 0, 1);
+  box-shadow: 1px 4px 15px 2px rgba(63, 136, 197, 1 ), 82%,
+  ;
   background-image: linear-gradient(
     170deg,
     rgba(208, 0, 0, 1) 39%,
@@ -279,14 +295,14 @@ a:target {
 }
 
 p {
-  width: 45vw;
+  width: 60vw;
   text-align: center;
   justify-content: space-evenly;
   margin: 0 auto;
   padding: 10vw;
-  font-size: 22px;
+  font-size: 40px;
   background-color: transparent;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .sectiontitle {
@@ -314,19 +330,105 @@ p {
   );
   color: #1c3144;
   margin-bottom: 20px;
-  background-color: transparent;
   font-weight: 900;
 }
+@media  screen and (max-width: 768px) {
+  #name1 {
+    font-size: 90px;
+    color: #1c3144;
+    position: relative;
+    font-weight: 900;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 40px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-image: linear-gradient(
+      170deg,
+      rgba(208, 0, 0, 1) 39%,
+      rgba(1, 22, 39, 1) 49%,
+      rgba(0, 0, 0, 1) 64%,
+      rgba(63, 136, 197, 1) 82%,
+      rgba(63, 136, 197, 1) 100%
+    );
+  }
+  header {
+    height: 18vh;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    top: 0;
+    left: 0;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  ul.nav-links {
+    display: flex;
+    width: auto;
+    height: auto;
+    font-weight: 900;
+    margin: 0 auto;
+    align-self: center;
+    padding: 0;
+  }
+  .welcome-section {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    background-color: transFarent;
+  }
+  #flex-parent-container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    margin-top: 10vh;
+  }
+  #yashImage {
+    margin-top: 14vh;
+    max-width: 100%;
+    border-radius: 20%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    height:400px;
+  }  
+  #row-container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: transparent;
+    margin-top:9vh;
+  }
+  
 
+}
 #contactTable {
   display: flex;
   flex-flow: column wrap;
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
   justify-content: space-around;
   background-color: transparent;
   font-weight: 800;
+  margin-top: -200px;
 }
 
 #contact-list {
@@ -339,7 +441,6 @@ p {
 #contact-list li {
   padding: 20px;
   padding-right: 6vw;
-  margin-top: 10vh;
   background-color: transparent;
 }
 
@@ -352,7 +453,8 @@ p {
 }
 
 #project-list {
-  display: inline-block;
+  display: inline-block;    background: red;
+
   flex-flow: column wrap;
   list-style: none;
   background-color: transparent;
@@ -444,14 +546,23 @@ table.project-table th {
   background-color: transparent;
 }
 
-#githublogo {
+.logo {
   width: 90px;
   height: 90px;
   background-color: transparent;
-  background-image: url(https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png);
   background-size: contain;
 }
+#githublogo{
+  background-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
 
+}
+#twitterlogo{ 
+ background-image: url(https://www.pngkit.com/png/full/175-1751841_instagram-logo-cute-twitter-logo-png.png);  
+} 
+#linkedinlogo{
+  background-image: url(https://www.pngkit.com/png/full/8-85849_new-latest-linkedin-logo-linkedin-icon-png-black.png);
+
+}
 .project-links {
   display: flex;
   flex-flow: row wrap;
@@ -492,4 +603,22 @@ table.project-table th {
 }
 .stroke900{
   font-weight: 900;
+}
+a:target {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  margin: 10vh;
+}
+.logo a:hover{
+  color: black ;
+}
+a.licolor:hover{
+  color:#2867B2; 
+}
+a.ghcolor:hover{
+  color: #bd2c00;
+}
+a.twcolor:hover{
+  color:#1DA1F2; 
 }
