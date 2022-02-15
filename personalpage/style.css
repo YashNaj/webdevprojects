@@ -23,7 +23,7 @@ section {
   scroll-margin-top: 13vh;
 }
 
-header {
+nav {
   height: 11vh;
   width: 100%;
   margin: 0 auto;
@@ -107,6 +107,7 @@ a:target {
   display: flex;
   flex-flow: row wrap;
   background-color: transparent;
+  margin-top: 10vh;
 }
 .about {
   min-height: 100vh;
@@ -129,8 +130,7 @@ a:target {
   flex-flow: column wrap;
   height: auto;
 }
-
-.projects {
+#projects {
   min-height: 100vh;
   width: 100vw;
   display: flex;
@@ -151,7 +151,6 @@ a:target {
   display: flex;
   flex-flow: column;
   padding: 0;
-  margin-top: 12vh; 
 }
 
 #namecontainer {
@@ -164,13 +163,11 @@ a:target {
   font-weight: 900;
 }
 #yashImage {
-  margin-top: 14vh;
-  max-width: 100%;
+  max-width: 100%; 
   border-radius: 20%;
-  position: relative;
-  background: red;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+#imagecontainer{}
 #name1 {
   font-size: 6vw;
   color: #1c3144;
@@ -359,7 +356,7 @@ p {
       rgba(63, 136, 197, 1) 100%
     );
   }
-  header {
+  nav {
     height: 18vh;
     width: 100%;
     z-index: 1;
@@ -444,28 +441,26 @@ p {
   background-color: transparent;
 }
 
-#project-list {
+#project-table-container {
   width: 100%;
   height: 100%;
   background-color: transparent;
   margin: 0 auto;
   font-weight: 900;
 }
-
 #project-list {
-  display: inline-block;    background: red;
-
+  display: inline-block;    
+  background: red;
   flex-flow: column wrap;
   list-style: none;
   background-color: transparent;
 }
-
-table.project-table {
+table.project-table{
   width: 100%;
   height: 100vh;
   text-align: center;
   min-height: 33vh;
-  background-color: transparent;
+  padding:20px
 }
 
 table.project-table td,
@@ -483,7 +478,7 @@ table#contactTable {
   background-color: transparent;
 }
 
-table#contactTable td,
+table .project-table td,
 table.project-table th {
   border: 0px solid #aaaaaa;
   padding: 0px 0px;
@@ -552,7 +547,7 @@ table.project-table th {
   background-color: transparent;
   background-size: contain;
 }
-#githublogo{
+#ghlogo{
   background-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
 
 }
@@ -563,19 +558,18 @@ table.project-table th {
   background-image: url(https://www.pngkit.com/png/full/8-85849_new-latest-linkedin-logo-linkedin-icon-png-black.png);
 
 }
-.project-links {
+.project-tile {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 4vh;
   margin: 0 auto;
-  width: 40%;
+  width: 100%;
   font-size: 40px;
-  margin-top: 40px;
   background-color: transparent;
 }
 
-#projectTable {
+#projectTable 
+{
   display: flex;
   flex-flow: column wrap;
   width: 100%;
@@ -584,6 +578,7 @@ table.project-table th {
   justify-content: space-around;
   background-color: transparent;
   font-weight: 900;
+  background:blue;
 }
 
 #contactTable td {
